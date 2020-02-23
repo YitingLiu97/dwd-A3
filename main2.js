@@ -5,10 +5,10 @@ window.addEventListener('DOMContentLoaded', () => {
     //   button.onclick = buttonHandler;
     const input = document.getElementById("textInput");
     //when ENTER key is pressed, show the images 
-    input.addEventListener('keydown', function (e) {
+    input.addEventListener('keydown', function(e) {
         if (e.keyCode == 13) {
             console.log('enter key pressed');
-            buttonHandler();
+            EnterRefresh();
         }
     });
 });
@@ -20,11 +20,23 @@ let farmid = [];
 let serverid = [];
 let id = [];
 let secret = [];
+let oldTag = " ";
 
-async function buttonHandler() {
 
+async function handleChange(tags) {
+    if (tags == oldTag) return;
+    else oldTag = tags;
+    console.log(`oldtext:${oldTag}`);
+    console.log(`Tag:${tags}`);
+
+}
+
+async function EnterRefresh() {
     tags = document.getElementById("textInput").value;
-    console.log(tags);
+    let lasttag = document.getElementsByTagName('input')[0].value;
+
+    console.log(`lasttag:${lasttag}`);
+    console.log(`tags:${tags}`)
 
     let url = `https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=${APIKey}&tags=${tags}&safe_search=1&per_page=${perPageLimits}&page=2&format=json&nojsoncallback=1`;
 
@@ -33,6 +45,10 @@ async function buttonHandler() {
 
     let photos = results.photos.photo;
     let photoURL = [];
+
+
+    if (tags != lasttag) return;
+    else { photoURL = []; }
 
     photos.forEach(photo => {
         farmid = photo.farm;
@@ -43,14 +59,18 @@ async function buttonHandler() {
     });
 
     photoURL.forEach(url => {
+        let div = document.createElement("div");
+        div.className = "img"; //add class name of div for the images 
         let onepic = document.createElement("img");
-        document.getElementById("pictures").appendChild(onepic);
+        document.getElementById("pictures").appendChild(div).appendChild(onepic);
         onepic.src = `${url}`;
     });
 
 
-    //how to get the updated value from the textbox - show the random images 
+}
 
+//how to get the updated value from the textbox - show the random images
 
+//how to update the image everytime when enter is pressed 
 
-}   
+//reference: https://inimino.org/~inimino/blog/javascript_live_text_input

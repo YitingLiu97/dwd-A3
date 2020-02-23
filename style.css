@@ -1,13 +1,69 @@
-*{
-margin:0;
-padding:0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-/* img{
-top:0;
-left:0;
-height: 100px;
-width: 100px; */
+body {
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: pink;
+    color: white;
+}
 
-/* } */
+
+/* how to make a grid https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout */
+
+p {
+    text-align: center;
+    border: 2pt black solid;
+    /* padding */
+}
+
+.container {}
+
+#pictures {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#pictures .img {
+    /* width: 30%;
+    display: flex; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* Change this */
+    flex-wrap: wrap;
+}
+
+img {
+    /* border: 5pt yellow solid; */
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    /* float: left; */
+    object-fit: cover;
+}
+
+
+/* to crop images */
+
+.box {
+    color: red;
+    /* border: 5px solid black; */
+    position: center sticky;
+    /* margin-top: 50vh; */
+    height: 30px;
+    text-align: center;
+}
+
+#textInput {
+    border-style: none;
+    outline: none;
+    display: inline-flex;
+    margin: 0 auto;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
