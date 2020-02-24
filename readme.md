@@ -1,7 +1,7 @@
 <!-- Every README should start with an H1 -->
 # Image Loops
 <!-- A one sentence description of the project or assignment -->
-An image search engine from Flickr. Play it [here](#). 
+An image search engine from Flickr. Play it [here](https://yitingliu97-dwd-a3.glitch.me/). 
 ![Logo](https://github.com/YitingLiu97/dwd-A3/blob/master/screenshots/image%20loops.png)
 
 <!-- It is good practice to add an about or summary -->
@@ -78,14 +78,12 @@ This is a process of trail and errors and some ideas come along when I was creat
 
 Also, I learned how simple it is to createElements and add tags in Javascript. It takes a while to wrap my head around but it is worthy and convenient for me in the end. 
 
-I am half satisfied with my CSS effort. With the help of the [horizontal scrolling tutorial] (https://www.youtube.com/watch?v=OeaHnxahf40), I was able to make the scrolling smooth. I felt my CSS is not as strong. I had to search for the website for multiple outcomes. For instance, I wanted to increase the font size of the placeHolder content in the textbox. The back-and-forth searching makes me feel like I have a long way to go. But I am excited since now I have a goal to create websites that are music and image related. 
+I am half satisfied with my CSS effort. With the help of the [horizontal scrolling tutorial](https://www.youtube.com/watch?v=OeaHnxahf40), I was able to make the scrolling smooth. I felt my CSS is not as strong. I had to search for the website for multiple outcomes. For instance, I wanted to increase the font size of the placeHolder content in the textbox. The back-and-forth searching makes me feel like I have a long way to go. But I am excited since now I have a goal to create websites that are music and image related. 
 
 <!-- Any specific challenges or struggles documented -->
 ## Challenges & Struggles
-1. Flickr API takes time for me to figure out elements needed 
-- I tried to use Flickr Scraper yet failed to do so. So I went the old school way to deconstruct the API link in my js code. 
-2. Couldn't update images based on new user input 
-- The images will pile up at the end of the array rather than at the top. Therefore, users would have to scroll till the end to see the new images. 
+- Flickr API takes time for me to figure out elements needed. I tried to use Flickr Scraper yet failed to do so. So I went the old school way to deconstruct the API link in my js code. 
+- Couldn't update images based on new user input. The images will pile up at the end of the array rather than at the top. Therefore, users would have to scroll till the end to see the new images. 
 
 <!-- Any questions you have -->
 <!-- ## Questions -->
@@ -93,9 +91,9 @@ I am half satisfied with my CSS effort. With the help of the [horizontal scrolli
 <!-- References for resources and inspiration -->
 ## References
 
-[How to make a grid in CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout)
-[User input updates](https://inimino.org/~inimino/blog/javascript_live_text_input)
-[Horizontal Scrolling](https://www.youtube.com/watch?v=OeaHnxahf40)
+* [How to make a grid in CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout)
+* [User input updates](https://inimino.org/~inimino/blog/javascript_live_text_input)
+* [Horizontal Scrolling](https://www.youtube.com/watch?v=OeaHnxahf40)
 <!-- 
 * Author First Name, Author Last Name. [Link]()
 * Author First Name, Author Last Name. [Link]() -->
