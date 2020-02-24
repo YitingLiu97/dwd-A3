@@ -60,15 +60,26 @@ async function EnterRefresh() {
 
     photoURL.forEach(url => {
         let div = document.createElement("div");
+        let link = document.createElement("a");
         div.className = "img"; //add class name of div for the images 
-        let onepic = document.createElement("img");
-        document.getElementById("pictures").appendChild(div).appendChild(onepic);
+        onepic = document.createElement("img");
         onepic.src = `${url}`;
+        link.href=onepic.src;
+        document.getElementById("pictures").appendChild(div).appendChild(link).appendChild(onepic);
+        
+        // console.log(`link: ${link}`);
     });
 
 
 }
+// let onepic;
 
+// let isIn = false;
+// let x =0;
+// let y =0;
+
+
+// async function 
 //how to get the updated value from the textbox - show the random images
 
 //how to update the image everytime when enter is pressed 
